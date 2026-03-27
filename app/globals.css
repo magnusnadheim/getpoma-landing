@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #F6F5F1;
+  --foreground: #202020;
+  --card: #FFFFFF;
+  --card-foreground: #202020;
+  --popover: #FFFFFF;
+  --popover-foreground: #202020;
+  --primary: #6B6BFF;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EEEDE9;
+  --secondary-foreground: #202020;
+  --muted: #EEEDE9;
+  --muted-foreground: #6B6B6B;
+  --accent: #EEEDE9;
+  --accent-foreground: #202020;
+  --destructive: #FF577F;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E4E0;
+  --input: #E5E4E0;
+  --ring: #6B6BFF;
+  --radius: 0.75rem;
+  
+  /* Poma AI Pillar Colors */
+  --aging: #57897D;
+  --sleep: #0928A5;
+  --youth: #FF9500;
+  --energy: #FF577F;
+  
+  /* Macro Colors */
+  --calories: #202020;
+  --protein: #EA7379;
+  --carbs: #DF9A4B;
+  --fats: #856FAD;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-dancing-script), Georgia, serif;
+  --font-mono: 'Geist Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Pillar colors */
+  --color-aging: var(--aging);
+  --color-sleep: var(--sleep);
+  --color-youth: var(--youth);
+  --color-energy: var(--energy);
+  
+  /* Macro colors */
+  --color-calories: var(--calories);
+  --color-protein: var(--protein);
+  --color-carbs: var(--carbs);
+  --color-fats: var(--fats);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
