@@ -23,7 +23,7 @@ export function HeroSection() {
                 className="h-14 rounded-2xl bg-primary px-8 text-base font-medium text-primary-foreground hover:bg-primary/90"
               >
                 <a 
-                  href="https://apps.apple.com/app/poma-ai" 
+                  href="https://apps.apple.com/app/poma-ai/id6748758285" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-3"

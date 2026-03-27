@@ -33,7 +33,7 @@ export function Navbar() {
           </Link>
           <Button asChild size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl">
             <a 
-              href="https://apps.apple.com/app/poma-ai" 
+              href="https://apps.apple.com/app/poma-ai/id6748758285" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-2"
